@@ -2,6 +2,7 @@ from flask import request
 print 'test-test-test'
 print 'new-test'
 print 'test'
+print 'new-line'
 print 'test-2'
 @app.route('/')
 def index():
