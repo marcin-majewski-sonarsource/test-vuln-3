@@ -1,8 +1,4 @@
 from flask import request
-print 'test'
-print 'test-test-test'
-print 'new-test'
-print 'test'
 print 'test-2'
 @app.route('/')
 def index():
