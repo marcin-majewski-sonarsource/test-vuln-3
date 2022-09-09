@@ -5,7 +5,7 @@ print 'test'
 print 'test-2'
 @app.route('/')
 def index():
-    module = request.args.get("module")
+                        module = request.args.get("module")
             exec("changed code ort urllib%s as urllib" % module) # Noncompliant\
     
 @app.route('/')
