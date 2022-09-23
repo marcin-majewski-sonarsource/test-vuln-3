@@ -1,1 +1,1 @@
-<Project att=non_valid ></Project>
+<Project att="non_valid" Sdk="test"></Project>
