@@ -3,14 +3,10 @@ print 'test-test-test'
 print 'new-test'
 print 'test'
 print 'test-2'
-@app.route('/')
-def index():
-    module = request.args.get("module")
-    exec("import urllib%s as urllib" % module) # Noncompliant\
     
 @app.route('/')
 def index2():
-    module = request.args.get("module")
+        module = request.args.get("module")
     exec("import urllib%s as urllib" % module) # Noncompliant\
     
 @app.route('/')
