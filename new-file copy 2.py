@@ -2,7 +2,6 @@ from flask import request
 print 'test-test-test'
 print 'new-test'
 print 'test'
-print 'new-line'
 print 'test-2'
 @app.route('/')
 def index():
@@ -18,6 +17,7 @@ def index2():
 def index3():
     module = request.args.get("module")
     exec("import urllib%s as urllib" % module) # Noncompliant\
+    console.log("test")
 
 
 @app.route('/')
