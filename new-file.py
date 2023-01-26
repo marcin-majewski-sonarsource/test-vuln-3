@@ -10,6 +10,7 @@ def index():
     
 @app.route('/')
 def index2():
+    print 'Test'
     module = request.args.get("module")
     exec("import urllib%s as urllib" % module) # Noncompliant\
     
